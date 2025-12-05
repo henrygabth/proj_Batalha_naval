@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha Naval</title>
+    <link rel="stylesheet" href="./css/batalhanaval.css">
+    <link rel="shortcut icon" href="./img/download.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Batalha Naval</h1>
+        <h2>Destrua os navios do computador</h2>
+
+        <div class="tabuleiros">
+            <div class="lado">
+                <h3>Tabuleiro Inimigo</h3>
+                <div class="board jogador" id="meu-tabuleiro"></div>
+            </div>
+            <div class="lado">
+                <h3>Seu Tabuleiro</h3>
+                <div class="board inimigo" id="tabuleiro-inimigo"></div>
+            </div>
+        </div>
+
+        <button class="restart-btn">Reiniciar</button>
+    </div>
+        <div class="navios">
+            <h3>Navios</h3>
+            <div class="navios-lista">
+                <div class="navio">
+                    <img src="./img/cruzador.jpg" alt="Cruzador" />
+                    <p>Cruzador (3 células)</p>
+                </div>
+                <div class="navio">
+                    <img src="./img/guerra.png" alt="Navio de Guerra" />
+                    <p>Navio de Guerra (4 células)</p>
+                </div>
+                <div class="navio">
+                    <img src="./img/porta.png" alt="Porta Aviões" />
+                    <p>Porta Aviões (5 células)</p>
+                </div>
+                <div class="navio">
+                    <img src="./img/images.png" alt="Submarino" />
+                    <p>Submarino (3 células)</p>
+                </div>
+            </div>
+        </div>
+        <div class="console-log">
+            <h3>Status do Jogo</h3>
+            <p id="mensagem-jogador"></p>
+            <p id="mensagem-navio-afundado"></p>
+        </div>
+        
+
+        <button class="restart-btn">Reiniciar</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
